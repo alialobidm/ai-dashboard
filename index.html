@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI releases & METR projections</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AI releases & METR projections</h1>
+    </header>
+
+    <div id="quarterly-container"></div>
+
+    <div class="card">
+      <h2>Length of human tasks an AI can complete autonomously</h2>
+      <div class="grid">
+        <div>
+          <h3>With 50% success rate</h3>
+          <table id="proj50">
+            <thead>
+              <tr>
+                <th>Milestone</th>
+                <th>ETA</th>
+                <th>How long till</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div>
+          <h3>With 80% success rate</h3>
+          <table id="proj80">
+            <thead>
+              <tr>
+                <th>Milestone</th>
+                <th>ETA</th>
+                <th>How long till</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <p>
+        <a
+          href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Website</a
+        >,
+        <a
+          href="https://arxiv.org/abs/2503.14499"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Paper
+        </a>
+      </p>
+    </div>
+
+    <div id="models-container"></div>
+
+    <div id="changelogs-container"></div>
+
+    <script src="src/models.js"></script>
+    <script src="src/changelogs.js"></script>
+    <script src="src/estimates.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
