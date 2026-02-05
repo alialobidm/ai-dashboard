@@ -12,6 +12,24 @@ const LABS = Object.freeze({
 
 const models = [
   {
+    name: "Composer 1.5",
+    lab: LABS.Cursor,
+    release: "2026-02-09",
+    releaseUrl: "https://cursor.com/blog/composer-1-5",
+  },
+  {
+    name: "GPT-5.3-Codex",
+    lab: LABS.OpenAI,
+    release: "2026-02-05",
+    releaseUrl: "https://openai.com/index/introducing-gpt-5-3-codex/",
+  },
+  {
+    name: "Claude Opus 4.6",
+    lab: LABS.Anthropic,
+    release: "2026-02-05",
+    releaseUrl: "https://www.anthropic.com/news/claude-opus-4-6",
+  },
+  {
     name: "GPT-5.2-Codex",
     lab: LABS.OpenAI,
     release: "2025-12-18",

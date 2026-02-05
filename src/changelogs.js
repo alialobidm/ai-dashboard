@@ -1,22 +1,30 @@
 const changelogs = [
   {
-    name: "Amp's Blog",
+    name: "Amp Blog",
     url: "https://ampcode.com/chronicle",
   },
   {
-    name: "Beads",
+    name: "Beads Releases",
     url: "https://github.com/steveyegge/beads/releases",
   },
   {
-    name: "Claude Code",
+    name: "Claude Code Changelog",
     url: "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
   },
   {
-    name: "Codex CLI",
+    name: "Codex CLI Commits",
+    url: "https://github.com/openai/codex/commits/main",
+  },
+  {
+    name: "Codex CLI Releases",
     url: "https://github.com/openai/codex/releases",
   },
   {
-    name: "Cursor",
+    name: "Cursor Blog",
+    url: "https://cursor.com/blog",
+  },
+  {
+    name: "Cursor Changelog",
     url: "https://cursor.com/changelog",
   },
   {
@@ -28,15 +36,19 @@ const changelogs = [
     url: "https://github.com/google-gemini/gemini-cli/releases",
   },
   {
-    name: "Opencode",
+    name: "Openclaw Releases",
+    url: "https://github.com/openclaw/openclaw/releases",
+  },
+  {
+    name: "Opencode Releases",
     url: "https://github.com/sst/opencode/releases",
   },
   {
-    name: "Pi",
+    name: "Pi Releases",
     url: "https://github.com/badlogic/pi-mono/releases",
   },
   {
-    name: "Toad",
+    name: "Toad Releases",
     url: "https://github.com/batrachianai/toad/releases",
   },
 ];
