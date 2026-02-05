@@ -28,6 +28,8 @@ const models = [
     lab: LABS.OpenAI,
     release: "2025-12-11",
     releaseUrl: "https://openai.com/index/introducing-gpt-5-2/",
+    metr50: 6 * HOURS + 34 * MINUTES,
+    metr80: 55 * MINUTES,
   },
   {
     name: "Claude Opus 4.5",

@@ -103,6 +103,21 @@ th {
   gap: 12px;
 }
 
+.page-footer {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.page-footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;

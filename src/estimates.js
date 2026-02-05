@@ -110,13 +110,16 @@ function getNextXQuarters(numFutureQuarters) {
   // Determine current quarter (0-3)
   const currentQuarter = Math.floor(currentMonth / 3);
 
-  // Calculate how many quarters have passed this year
   let quarters = [];
   let year = currentYear;
-  let quarter = currentQuarter;
+  let quarter = currentQuarter + 1;
+  if (quarter > 3) {
+    quarter = 0;
+    year++;
+  }
 
-  // Add current quarter + numFutureQuarters future quarters
-  for (let i = 0; i <= numFutureQuarters; i++) {
+  // Add next numFutureQuarters quarters (excluding current quarter)
+  for (let i = 0; i < numFutureQuarters; i++) {
     const quarterNum = quarter + 1; // Q1, Q2, Q3, Q4
     const name = `${year} Q${quarterNum}`;
 
@@ -180,7 +183,7 @@ function getMetrProjectionForDate(baseDate, metrValue) {
 
 function renderQuarterlyProjections() {
   const numFutureQuarters = 7;
-  const quarters = getNextXQuarters(numFutureQuarters); // Current + numFutureQuarters future quarters
+  const quarters = getNextXQuarters(numFutureQuarters); // Next numFutureQuarters (excluding current)
 
   // Find models with maximum metr50 and metr80
   const modelsWithMetr50 = models.filter((m) => m.metr50 != null);
@@ -224,11 +227,13 @@ function renderQuarterlyProjections() {
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
-  ["Quarter", "Start Date", "METR 50", "METR 80"].forEach((header) => {
-    const th = document.createElement("th");
-    th.textContent = header;
-    headerRow.appendChild(th);
-  });
+  ["Quarter", "Start Date", "METR 50", "METR 80", "How long until"].forEach(
+    (header) => {
+      const th = document.createElement("th");
+      th.textContent = header;
+      headerRow.appendChild(th);
+    },
+  );
   thead.appendChild(headerRow);
   table.appendChild(thead);
 
@@ -283,11 +288,14 @@ function renderQuarterlyProjections() {
       metr80Projection = formatMETRTimeWithDays(projectedValue);
     }
 
+    const howLongUntil = niceDiffFromNow(quarterStart);
+
     row.innerHTML = `
       <td data-label="Quarter">${q.name}</td>
       <td data-label="Start Date">${q.startDate}</td>
       <td data-label="METR 50">${metr50Projection}</td>
       <td data-label="METR 80">${metr80Projection}</td>
+      <td data-label="How long until">${howLongUntil}</td>
     `;
 
     tbody.appendChild(row);
