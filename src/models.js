@@ -12,6 +12,12 @@ const LABS = Object.freeze({
 
 const models = [
   {
+    name: "Claude Sonnet 4.6",
+    lab: LABS.Anthropic,
+    release: "2026-02-17",
+    releaseUrl: "https://www.anthropic.com/news/claude-sonnet-4-6",
+  },
+  {
     name: "Composer 1.5",
     lab: LABS.Cursor,
     release: "2026-02-09",
