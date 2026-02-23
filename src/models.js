@@ -28,12 +28,16 @@ const models = [
     lab: LABS.OpenAI,
     release: "2026-02-05",
     releaseUrl: "https://openai.com/index/introducing-gpt-5-3-codex/",
+    metr50: 6 * HOURS + 30 * MINUTES,
+    metr80: 47 * MINUTES,
   },
   {
     name: "Claude Opus 4.6",
     lab: LABS.Anthropic,
     release: "2026-02-05",
     releaseUrl: "https://www.anthropic.com/news/claude-opus-4-6",
+    metr50: 14 * HOURS + 30 * MINUTES,
+    metr80: 1 * HOURS + 3 * MINUTES,
   },
   {
     name: "GPT-5.2-Codex",
