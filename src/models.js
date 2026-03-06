@@ -12,6 +12,19 @@ const LABS = Object.freeze({
 
 const models = [
   {
+    name: "GPT-5.4",
+    lab: LABS.OpenAI,
+    release: "2026-03-05",
+    releaseUrl: "https://openai.com/index/introducing-gpt-5-4/",
+    notes: "Also released GPT-5.4 Pro",
+  },
+  {
+    name: "GPT-5.3 instant",
+    lab: LABS.OpenAI,
+    release: "2026-03-03",
+    releaseUrl: "https://openai.com/index/gpt-5-3-instant/",
+  },
+  {
     name: "Claude Sonnet 4.6",
     lab: LABS.Anthropic,
     release: "2026-02-17",
