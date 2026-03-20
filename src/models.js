@@ -12,6 +12,12 @@ const LABS = Object.freeze({
 
 const models = [
   {
+    name: "Composer 2",
+    lab: LABS.Cursor,
+    release: "2026-03-19",
+    releaseUrl: "https://cursor.com/blog/composer-2",
+  },
+  {
     name: "GPT-5.4 mini",
     lab: LABS.OpenAI,
     release: "2026-03-17",
