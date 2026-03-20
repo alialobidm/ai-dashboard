@@ -12,6 +12,13 @@ const LABS = Object.freeze({
 
 const models = [
   {
+    name: "GPT-5.4 mini",
+    lab: LABS.OpenAI,
+    release: "2026-03-17",
+    releaseUrl: "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/",
+    notes: "Also released GPT-5.4 nano",
+  },
+  {
     name: "GPT-5.4",
     lab: LABS.OpenAI,
     release: "2026-03-05",

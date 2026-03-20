@@ -12,12 +12,12 @@ const changelogs = [
     url: "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
   },
   {
-    name: "Codex CLI Commits",
-    url: "https://github.com/openai/codex/commits/main",
+    name: "Codex Changelog",
+    url: "https://developers.openai.com/codex/changelog",
   },
   {
-    name: "Codex CLI Releases",
-    url: "https://github.com/openai/codex/releases",
+    name: "Codex CLI Commits",
+    url: "https://github.com/openai/codex/commits/main",
   },
   {
     name: "Cursor Blog",
@@ -28,28 +28,12 @@ const changelogs = [
     url: "https://cursor.com/changelog",
   },
   {
-    name: "Dexter",
-    url: "https://github.com/virattt/dexter",
-  },
-  {
     name: "Gemini CLI",
     url: "https://github.com/google-gemini/gemini-cli/releases",
   },
   {
-    name: "Openclaw Releases",
-    url: "https://github.com/openclaw/openclaw/releases",
-  },
-  {
     name: "Opencode Releases",
     url: "https://github.com/sst/opencode/releases",
-  },
-  {
-    name: "Pi Releases",
-    url: "https://github.com/badlogic/pi-mono/releases",
-  },
-  {
-    name: "Toad Releases",
-    url: "https://github.com/batrachianai/toad/releases",
   },
 ];
 
